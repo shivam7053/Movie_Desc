@@ -8,7 +8,7 @@ function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/movies/')
+    axios.get('https://movie-desc.onrender.com/api/movies/')
       .then(response => {
         setMovies(response.data);
       })
